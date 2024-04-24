@@ -1,0 +1,17 @@
+*{
+    font-family: karla;
+}
+
+
+.titulo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.esqueceusenha{
+    color: #CC7626;
+}
