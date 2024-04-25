@@ -26,3 +26,12 @@
     width: 75% !important;
     align-items: normal;
 }
+
+.voltar{
+    margin-left: 13%;
+    width: 22px;
+}
+
+.voltar i{
+    font-size: 27px;
+}
