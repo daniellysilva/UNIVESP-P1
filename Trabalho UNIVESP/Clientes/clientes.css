@@ -24,4 +24,5 @@
 
 .table{
     width: 75% !important;
+    align-items: normal;
 }
