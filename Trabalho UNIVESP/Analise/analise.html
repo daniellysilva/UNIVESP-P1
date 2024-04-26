@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação</title>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="documentos.css">
+</head>
+<body>
+    <div class="cabecario">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Sysfoco</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Clientes</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Usuário
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container">
+        <h2>Análise</h2>
+    <form class="row g-3">
+      <div class="col-md-2">
+        <label for="validationDefaultUsername" class="form-label">Código do Cliente</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="validationDefaultUsername" value="123456"  aria-describedby="inputGroupPrepend2" required>
+        </div>
+      </div>
+        <div class="col-md-4">
+          <label for="validationDefault04" class="form-label">Tipo de seguro</label>
+          <select class="form-select" id="validationDefault07" required>
+            <option selected disabled value="">DPVAT</option>
+            <option>Seguro de Vida</option>
+            <option>Terceiro</option>
+            <option>Acidente</option>
+            <option>Encerrar</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">O cliente tem direito ao seguro?</label>
+          <select class="form-select" id="validationDefault07" required>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <div class="container">
+      <h3>Observação</h3>
+      <form class="row g-3">
+        <div class="col-md-5">
+          <label for="validationDefault01" class="form-label">Campo de observação</label>
+          <input type="text" class="form-control" id="validationDefault01" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault04" class="form-label">Fase</label>
+          <select class="form-select" id="validationDefault07" required>
+            <option selected disabled value="">Documento Inicial</option>
+            <option>Análise</option>
+            <option>Processos Internos</option>
+            <option>Pericia</option>
+            <option>Seguradora</option>
+          </select>
+        </div>
+        <div class="col-5">
+          <button class="btn btn-primary">Voltar</button>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary" type="submit">Seguir próxima fase</button>
+        </div>
+      </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
