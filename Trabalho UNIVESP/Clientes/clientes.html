@@ -51,7 +51,7 @@
   <!-- Modal -->
   <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
@@ -60,7 +60,64 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <div class="container-fluid">
+            <form class="row g-4">
+              <div class="col-md-3">
+                <label for="validationDefaultUsername" class="form-label">Código do Cliente</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+                    required>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <label for="validationDefault01" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="validationDefault01" required>
+              </div>
+              <div class="col-md-2">
+                <label for="validationDefault02" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="validationDefault02" required>
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault03" class="form-label">RG</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault03" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="validationDefault04" required>
+              </div>
+              <div class="col-md-5">
+                <label for="validationDefault03" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault03" class="form-label">Número do celular</label>
+                <input type="number" class="form-control" id="validationDefault06" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault04" class="form-label">Tipo de seguro</label>
+                <select class="form-select" id="validationDefault07" required>
+                  <option selected disabled value="">DPVAT</option>
+                  <option>Seguro de Vida</option>
+                  <option>Terceiro</option>
+                  <option>Acidente</option>
+                </select>
+              </div>
+              <div class="col-10">
+                <label for="validationDefault04" class="form-label">Fase</label>
+                <select class="form-select" id="validationDefault07" required>
+                  <option selected disabled value="">Documento Inicial</option>
+                  <option>Análise</option>
+                  <option>Processos Internos</option>
+                  <option>Pericia</option>
+                  <option>Seguradora</option>
+                  <option>Rejeitar</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-primary" type="submit">Seguir próxima fase</button>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
