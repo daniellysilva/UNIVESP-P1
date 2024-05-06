@@ -134,6 +134,7 @@
             </div>
 
             <div class="form-outline mb-4">
+              <h6>Fases</h6>
               <select class="form-select" aria-label="Default select example">
                 <option selected value="">Documento Inicial</option>
                 <option>Análise</option>
@@ -145,16 +146,8 @@
             </div>
 
             <div class="form-outline mb-4">
-                <div class="form-group">
-                    <label for="datainiciada">Data de início</label>
-                    <!-- Datepicker as text field -->         
-                    <div class="input-group date" data-date-format="dd/mm/yyyy">
-                      <input  type="text" class="form-control" placeholder="dd/mm/yyyy">
-                      <div class="input-group-addon" >
-                        <span class="glyphicon glyphicon-th"></span>
-                      </div>
-                    </div>
-                </div>
+              <h6>Data de Início</h6>
+                <input type="date" class="cale form-control">
             </div>
             <!-- Submit button -->
             <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block">Cadastrar</button>
@@ -222,7 +215,7 @@
           <th scope="row">1</th>
           <td>Daniel</td>
           <td>06/05/2024</td>
-          <td>Não finalizado</td>
+          <td>Em andamento</td>
           <td>
             <li>
               <ul><i data-toggle="modal" data-target="#exampleModalLong" class="editar fa-solid fa-folder"></i>
@@ -236,7 +229,7 @@
           <th scope="row">2</th>
           <td>Marcelo</td>
           <td>06/05/2024</td>
-          <td>Não finalizado</td>
+          <td>Em andamento</td>
           <td>
             <li>
               <ul><i data-toggle="modal" data-target="#exampleModalLong" class="editar fa-solid fa-folder"></i>
@@ -250,7 +243,7 @@
           <th scope="row">3</th>
           <td>Cátia</td>
           <td>06/05/2024</td>
-          <td>Não finalizado</td>
+          <td>Em andamento</td>
           <td>
             <li>
               <ul><i data-toggle="modal" data-target="#exampleModalLong" class="editar fa-solid fa-folder"></i>
@@ -264,7 +257,7 @@
           <th scope="row">4</th>
           <td>Isabela</td>
           <td>06/05/2024</td>
-          <td>Não finalizado</td>
+          <td>Em andamento</td>
           <td>
             <li>
               <ul><i data-toggle="modal" data-target="#exampleModalLong" class="editar fa-solid fa-folder"></i>
@@ -299,11 +292,6 @@
     crossorigin="anonymous"></script>
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
-   <!-- Plugin pro Datapicker novo -->
-   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
-   <script>
-    $('.input-group.date').datepicker({format: "dd/mm/yyyy"});
-   </script>
 </body>
 
 </html>

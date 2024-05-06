@@ -76,3 +76,11 @@
     justify-content: center;
     padding: 1.8em;
 }
+
+.cale{
+    border-radius: 1px;
+}
+
+h6 {
+    color: #757575 !important;
+}
