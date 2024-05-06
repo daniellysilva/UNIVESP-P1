@@ -63,7 +63,7 @@
     <div class="modal-dialog d-flex justify-content-center">
       <div class="modal-content w-75">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel2">Sign up</h5>
+          <h5 class="modal-title" id="exampleModalLabel2">Cadastrar Cliente</h5>
           <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal"
             aria-label="Close"></button>
         </div>
@@ -132,9 +132,32 @@
               <label for="formFileMultiple" class="form-label">Documentação</label>
               <input class="form-control" type="file" id="formFileMultiple" multiple />
             </div>
+
+            <div class="form-outline mb-4">
+              <select class="form-select" aria-label="Default select example">
+                <option selected value="">Documento Inicial</option>
+                <option>Análise</option>
+                <option>Processos Internos</option>
+                <option>Pericia</option>
+                <option>Seguradora</option>
+                <option>Rejeitar</option>
+              </select>
+            </div>
+
+            <div class="form-outline mb-4">
+                <div class="form-group">
+                    <label for="datainiciada">Data de início</label>
+                    <!-- Datepicker as text field -->         
+                    <div class="input-group date" data-date-format="dd/mm/yyyy">
+                      <input  type="text" class="form-control" placeholder="dd/mm/yyyy">
+                      <div class="input-group-addon" >
+                        <span class="glyphicon glyphicon-th"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
             <!-- Submit button -->
-            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block">Sign
-              up</button>
+            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block">Cadastrar</button>
           </form>
         </div>
       </div>
@@ -276,6 +299,11 @@
     crossorigin="anonymous"></script>
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+   <!-- Plugin pro Datapicker novo -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
+   <script>
+    $('.input-group.date').datepicker({format: "dd/mm/yyyy"});
+   </script>
 </body>
 
 </html>
