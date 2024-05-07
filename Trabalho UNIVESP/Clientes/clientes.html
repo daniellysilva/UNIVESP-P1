@@ -71,8 +71,8 @@
           <form>
             <!-- Name input -->
             <div data-mdb-input-init class="form-outline mb-4">
-              <input type="text" id="nomecompleto" class="form-control" />
-              <label class="form-label" for="nomecompleto">Nome Completo</label>
+              <input type="text" id="nome" class="form-control" />
+              <label class="form-label">Nome Completo</label>
             </div>
 
             <!--  RG -->
@@ -142,11 +142,6 @@
             <div class="form-outline mb-4">
               <h6>Data de Início</h6>
                 <input id="datainicio" type="date" class="cale form-control">
-            </div>
-
-            <div data-mdb-input-init class="form-outline mb-4">
-              <input type="text" id="andamento" class="form-control" />
-              <label class="form-label" for="andamento">Andamento</label>
             </div>
 
             <!-- Submit button -->
@@ -225,13 +220,6 @@
               </div>
               <div class="col-5">
                 <select class="form-select" aria-label="Default select example">
-                  <option selected disabled value="">Em andamento</option>
-                  <option>Finalizado</option>
-                  <option>Rejeitado</option>
-                </select>
-              </div>
-              <div class="col-5">
-                <select class="form-select" aria-label="Default select example">
                   <option selected disabled value="">Documento Inicial</option>
                   <option>Análise</option>
                   <option>Processos Internos</option>
@@ -261,7 +249,7 @@
           <th scope="col">Nome Completo</th>
           <th scope="col">Tipo do Cliente</th>
           <th scope="col">Data Inicio</th>
-          <th scope="col">Finalização</th>
+          <th scope="col">Fase</th>
           <th scope="col">Histórico</th>
         </tr>
       </thead>
@@ -271,7 +259,7 @@
           <td>Daniel Santos</td>
           <td>Seguro de Vida</td>
           <td>06/05/2024</td>
-          <td>Em andamento</td>
+          <td>Análise</td>
           <td>
             <i data-toggle="modal" data-target="#exampleModalLong" class="editar fa-solid fa-folder"></i>
           </td>
@@ -281,7 +269,7 @@
           <td>Marcelo Martins Souza</td>
           <td>Seguro de Vida, Acidente de Trabalho</td>
           <td>06/05/2024</td>
-          <td>Em andamento</td>
+          <td>Processos Internos</td>
           <td>
             <i data-toggle="modal" data-target="#exampleModalLong" class="editar fa-solid fa-folder"></i>
           </td>
@@ -291,7 +279,7 @@
           <td>Cátia Gabriele Silva</td>
           <td>Seguro de Vida, Acidente de Trabalho</td>
           <td>06/05/2024</td>
-          <td>Em andamento</td>
+          <td>Processos Internos</td>
           <td>
             <i data-toggle="modal" data-target="#exampleModalLong" class="editar fa-solid fa-folder"></i>
           </td>
@@ -301,7 +289,7 @@
           <td>Isabela Teixeira</td>
           <td>DPAT</td>
           <td>06/05/2024</td>
-          <td>Em andamento</td>
+          <td>Rejeitado</td>
           <td>
             <i data-toggle="modal" data-target="#exampleModalLong" class="editar fa-solid fa-folder"></i>
           </td>

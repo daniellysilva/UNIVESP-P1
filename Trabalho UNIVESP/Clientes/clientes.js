@@ -8,8 +8,8 @@ class Cliente {
     adicionar() {
       let cliente =  this.lerDados();
 
-     if (this.validaCampos(cliente)){
-        alert('salvar')
+     if (this.validaCampo(cliente)){
+        alert('salvar');
      }
         console.log(cliente);
     }
@@ -18,21 +18,16 @@ class Cliente {
         let cliente = {}
 
         cliente.id = this.id;
-        cliente.nomeCompleto = document.getElementById('nomecompleto').value;
-        cliente.andamento = document.getElementById('andamento').value;
+        cliente.nome = document.getElementById('nome').value;
 
-        return
+        return;
     }
 
-    validaCampos(cliente){
-        let  msg = '';
+    validaCampo(cliente){
+        let  msg = '', nome= String;
 
-        if (cliente.nomeCompleto == ''){
+        if (cliente.nome == ''){
             msg +- '- Informe o nome completo \n';
-        }
-
-        if (cliente.andamento == ''){
-            msg +- '- Informe o andamento \n';
         }
 
         if (msg != ''){
