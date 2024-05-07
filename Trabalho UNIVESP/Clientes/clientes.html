@@ -102,22 +102,22 @@
             <div class="tiposdeseguro form-outline mb-4">
               <h6>Tipos de seguros</h6>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="DPVAT" />
+                <input class="form-check-input" type="checkbox" value="DPVAT" id="tiposeguro" />
                 <label class="form-check-label" for="flexCheckDefault">DPVAT</label>
               </div>
 
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Seguro de Vida" />
+                <input class="form-check-input" type="checkbox" value="Seguro de Vida" id="tiposeguro" />
                 <label class="form-check-label" for="flexCheckChecked">Seguro de Vida</label>
               </div>
 
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Seguro de Vida" />
+                <input class="form-check-input" type="checkbox" value="Terceiro" id="tiposeguro" />
                 <label class="form-check-label" for="flexCheckChecked">Terceiro</label>
               </div>
 
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Seguro de Vida" />
+                <input class="form-check-input" type="checkbox" value="Acidentedetrabalho" id="tiposeguro" />
                 <label class="form-check-label" for="flexCheckChecked">Acidente de Trabalho</label>
               </div>
             </div>
@@ -144,12 +144,9 @@
                 <input id="datainicio" type="date" class="cale form-control">
             </div>
 
-            <div class="form-outline mb-4">
-              <select class="form-select" aria-label="Default select example">
-                <option id="andamento" selected disabled value="">Em andamento</option>
-                <option id="finalizado">Finalizado</option>
-                <option id="rejeitado">Rejeitado</option>
-              </select>
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="text" id="andamento" class="form-control" />
+              <label class="form-label" for="andamento">Andamento</label>
             </div>
 
             <!-- Submit button -->
