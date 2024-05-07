@@ -169,13 +169,72 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="">
             <form class="row g-2">
-              <div class="col-md-5">
+              <div class="form-floating mb-2">
+                <input type="number" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="1" value="1">
+                <label for="floatingPlaintextInput">Código do cliente</label>
+              </div>
+              <div class="form-floating mb-2">
+                <input type="text" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="Daniel" value="Daniel">
+                <label for="floatingPlaintextInput">Nome</label>
+              </div>
+              <div class="form-floating mb-2">
+                <input type="text" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="Santos" value="Santos">
+                <label for="floatingPlaintextInput">Sobrenome</label>
+              </div>
+              <div class="form-floating mb-2">
+                <input type="text" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="00000" value="00000">
+                <label for="floatingPlaintextInput">RG</label>
+              </div>
+              <div class="form-floating mb-2">
+                <input type="text" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="00000" value="00000">
+                <label for="floatingPlaintextInput">CPF</label>
+              </div>
+              <div class="form-floating mb-2">
+                <input type="text" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="Avenida das Flores" value="Avenida das Flores">
+                <label for="floatingPlaintextInput">Endereço</label>
+              </div>
+              <div class="form-floating mb-2">
+                <input type="number" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="1199999999" value="119999999">
+                <label for="floatingPlaintextInput">Número do celular</label>
+              </div>
+              <div class="tiposdeseguro container mb-4">
+                <h6>Tipos de seguros</h6>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="DPVAT" checked />
+                  <label class="form-check-label" for="flexCheckDefault">DPVAT</label>
+                </div>
+  
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Seguro de Vida" checked/>
+                  <label class="form-check-label" for="flexCheckChecked">Seguro de Vida</label>
+                </div>
+  
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Seguro de Vida" />
+                  <label class="form-check-label" for="flexCheckChecked">Terceiro</label>
+                </div>
+  
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Seguro de Vida" />
+                  <label class="form-check-label" for="flexCheckChecked">Acidente de Trabalho</label>
+                </div>
+              </div>
+              <div class="mb-2 container">
+                <button type="button" class="btn btn-primary">Documentos do cliente</button>
+              </div>
+              <div class="mb-2">
                 <label for="exampleFormControlTextarea1" class="form-label">Histórico</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-              <div class="fases col-5">
+              <div class="col-5">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled value="">Em andamento</option>
+                  <option>Finalizado</option>
+                  <option>Rejeitado</option>
+                </select>
+              </div>
+              <div class="col-5">
                 <select class="form-select" aria-label="Default select example">
                   <option selected disabled value="">Documento Inicial</option>
                   <option>Análise</option>
@@ -186,7 +245,6 @@
                 </select>
               </div>
             </form>
-          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
