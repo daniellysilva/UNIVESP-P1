@@ -1,42 +1,16 @@
-class Cliente {
+document.getElementById('formulario').addEventListener('submit', function(e) {
+    e.preventDefault(); // Impede o envio do formulário
+    var nome = document.getElementById('inputNome').value;
+    var cidade = document.getElementById('selectSeguro').value;
+    adicionarNaTabela(nome, cidade);
+    document.getElementById('formulario').reset(); // Limpa o formulário após o envio
+});
 
-    constructor() {
-        this.id = 1;
-        this.arrayClientes = [];
-    }
-
-    adicionar() {
-      let cliente =  this.lerDados();
-
-     if (this.validaCampo(cliente)){
-        alert('salvar');
-     }
-        console.log(cliente);
-    }
-
-    lerDados() {
-        let cliente = {}
-
-        cliente.id = this.id;
-        cliente.nome = document.getElementById('nome').value;
-
-        return;
-    }
-
-    validaCampo(cliente){
-        let  msg = '', nome= String;
-
-        if (cliente.nome == ''){
-            msg +- '- Informe o nome completo \n';
-        }
-
-        if (msg != ''){
-           alert(msg);
-           return false
-        }
-
-        return true;
-    }
+function adicionarNaTabela(nome, cidade) {
+    var tbody = document.getElementById('tbody');
+    var novaLinha = tbody.insertRow();
+    var colunaNome = novaLinha.insertCell(0);
+    var colunaCidade = novaLinha.insertCell(1);
+    colunaNome.textContent = nome;
+    colunaCidade.textContent = cidade;
 }
-
-var cliente = new Cliente();
