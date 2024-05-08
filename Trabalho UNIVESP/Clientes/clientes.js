@@ -1,32 +1,27 @@
 document.getElementById('formulario').addEventListener('submit', function(e) {
     e.preventDefault(); // Impede o envio do formulário
-    var celular = document.getElementById('celular').value;
-    var tiposSeguro = document.querySelectorAll('input[name="tiposeguro"]:checked');
-    var fase = document.getElementById('selectSeguro').value;
-    var dataInicio = document.getElementById('datainicio').value;
+    var nome = document.getElementById('inputNome').value;
+    console.log('Nome:', nome);
+    // Captura outros campos do formulário aqui...
 
-    // Formata os tipos de seguro selecionados em uma string
-    var tiposSeguroArray = Array.from(tiposSeguro).map(seguro => seguro.value).join(', ');
+    // Adiciona os dados à tabela
+    adicionarNaTabela(nome);
 
-    // Cria uma nova linha na tabela com os dados do formulário
-    adicionarNaTabela(celular, tiposSeguroArray, fase, dataInicio);
+    // Fecha o modal após o envio do formulário
+    var modal = new bootstrap.Modal(document.getElementById('modalFormulario'));
+    modal.hide();
 
     // Limpa o formulário após o envio
     document.getElementById('formulario').reset();
 });
 
-function adicionarNaTabela(celular, tiposSeguro, fase, dataInicio) {
+function adicionarNaTabela(nome) {
     var tbody = document.getElementById('tbody');
     var novaLinha = tbody.insertRow();
-    var colunaCelular = novaLinha.insertCell(0);
-    var colunaTiposSeguro = novaLinha.insertCell(1);
-    var colunaDocumentacao = novaLinha.insertCell(2);
-    var colunaFase = novaLinha.insertCell(3);
-    var colunaDataInicio = novaLinha.insertCell(4);
-    colunaCelular.textContent = celular;
-    colunaTiposSeguro.textContent = tiposSeguro;
-    colunaDocumentacao.textContent = documentacao.length > 0 ? 'Anexos: ' + documentacao.length : 'Nenhum';
-    colunaFase.textContent = fase;
-    colunaDataInicio.textContent = dataInicio;
-}
+    var colunaNome = novaLinha.insertCell(0);
+    // Adicione mais colunas conforme necessário
+    colunaNome.textContent = nome;
+    // Adicione mais dados às colunas conforme necessário
 
+    console.log('Dados adicionados à tabela:', nome);
+}
