@@ -1,0 +1,82 @@
+*{
+    font-family: karla;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.cabecario{
+    margin-bottom: 2em;
+}
+
+.cabecario a {
+    color: black;
+}
+
+.login{
+    float: left;
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table{
+    width: 75% !important;
+    align-items: normal;
+}
+
+.voltar{
+    margin-left: 13%;
+    width: 22px;
+}
+
+.voltar i{
+    font-size: 27px;
+}
+
+.tabela i{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tabela li{
+    list-style: none;
+}
+
+.tabela ul{
+    display: inline;
+}
+
+.editar{
+    color: blue;
+}
+
+.lixo{
+    color: red;
+}
+
+.registro{
+    padding: 1em;
+}
+
+.fases.col-5{
+    margin-top: 2.5em;
+}
+
+.botao{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1.8em;
+}
+
+.cale{
+    border-radius: 1px;
+}
+
+h6 {
+    color: #757575 !important;
+}
